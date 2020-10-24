@@ -10,18 +10,12 @@ function App() {
     return (
         <div>
             <OnOff/>
+            <PageTitle title={'This is APP component'}/>
             <Accordion titleValue={'Menu'} collapsed={false}/>
             <Rating value={3}/>
+            <PageTitle title={'My friends'}/>
             <UncontrolledAccordion titleValue={'Users'}/>
             <UncontrolledRating/>
-            {/*<PageTitle title={'This is APP component'}/>
-            <PageTitle title={'My friends'}/>
-            Article 1
-            <Rating value={3}/>
-            <Accordion titleValue={'Menu'} collapsed={true}/>
-            Article 1
-            <Rating value={4}/>
-            <Accordion titleValue={'Users'} collapsed={false}/>*/}
         </div>
     );
 }
