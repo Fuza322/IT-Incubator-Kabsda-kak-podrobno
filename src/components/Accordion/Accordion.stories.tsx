@@ -21,6 +21,7 @@ export const CollapsedMode = () => {
         />
     )
 }
+
 export const UncollapsedMode = () => {
     return (
         <Accordion
@@ -37,6 +38,7 @@ export const UncollapsedMode = () => {
         />
     )
 }
+
 export const ModeChanging = () => {
     const [collapsed, setCollapsed] = useState<boolean>(false)
     return (
