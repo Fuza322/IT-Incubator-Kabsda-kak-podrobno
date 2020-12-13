@@ -18,11 +18,6 @@ function App() {
             <OnOff on={switchOn} onChange={(on) => setSwitchOn(on)}/>
             <UncontrolledOnOff onChange={setSwitchOn}/>
             <PageTitle title={'This is APP component'}/>
-            <Accordion titleValue={'Menu'}
-                       collapsed={accordionCollapsed}
-                       onChange={ () => {setAccordionCollapsed(!accordionCollapsed)}}
-                       items={['Dimych', 'Valera', 'Artem', 'Victor']}
-            />
             <Rating value={ratingValue} onClick={setRatingValue}/>
             <PageTitle title={'My friends'}/>
             <UncontrolledAccordion titleValue={'Users'}/>
