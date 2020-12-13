@@ -32,7 +32,7 @@ function App() {
             <Rating value={ratingValue} onClick={setRatingValue}/>
             <PageTitle title={'My friends'}/>
             <UncontrolledAccordion titleValue={'Users'}/>
-            <UncontrolledRating onChange={setRatingValue}/> {/*!!!!!*/}
+            <UncontrolledRating onChange={setRatingValue}/>
         </div>
     );
 }

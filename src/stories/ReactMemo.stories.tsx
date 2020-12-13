@@ -14,11 +14,7 @@ const NewMessagesCounter = (props: NewMessagesCounterType) => {
     )
 }
 
-type UsersType = {
-    users: Array<string>
-}
-
-const UsersSecret = (props: UsersType) => {
+const UsersSecret = (props: { users: Array<string> }) => {
     return (
         <div>
             {props.users.map((u, i) => {
