@@ -1,8 +1,9 @@
 .select .main {
-    border: 1px solid black;
     display: inline-block;
-    min-height: 20px;
     min-width: 40px;
+    min-height: 20px;
+
+    border: 1px solid black;
 }
 
 .items {
@@ -12,6 +13,6 @@
 }
 
 .item.selected {
-    background-color: blue;
     color: white;
+    background-color: blue;
 }
