@@ -68,7 +68,7 @@ export function Select(props: SelectPropsType) {
                     active &&
                     <div className={s.items}>
                         {props.items.map(item => <div
-                            className={s.item + (hoveredItem === item ? s.selected : '')}
+                            className={`${s.item} ${(hoveredItem === item ? s.selected : '')}`}
                             key={item.value}
                             onClick={() => {
                                 onItemClick(item.value)
