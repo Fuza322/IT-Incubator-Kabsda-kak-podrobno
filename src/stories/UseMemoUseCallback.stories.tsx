@@ -1,7 +1,7 @@
 import React, {useCallback, useMemo, useState} from 'react'
 
 export default {
-    title: 'useMemo'
+    title: 'UseMemo&UseCallback'
 }
 
 export const DifficultCountingExample = () => {
@@ -70,7 +70,6 @@ export const HelpsToReactMemo = () => {
         return newArray
     }, [users])
 
-
     const addUser = () => {
         const newUsers = [...users, 'Sveta' + new Date().getTime()]
         setUsers(newUsers)
@@ -78,8 +77,14 @@ export const HelpsToReactMemo = () => {
 
     return (
         <>
-            <button onClick={() => {setCounter(counter + 1)}}>+</button>
-            <button onClick={() => { addUser() }}>Add user</button>
+            <button onClick={() => {
+                setCounter(counter + 1)
+            }}>+
+            </button>
+            <button onClick={() => {
+                addUser()
+            }}>Add user
+            </button>
             {counter}
             <Users users={newArray}/>
         </>
