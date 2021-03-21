@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {RatingValueType} from '../Rating/Rating';
+import {RatingValueType} from '../rating/Rating';
 
 type RatingPropsType = {
     defaultValue?: RatingValueType

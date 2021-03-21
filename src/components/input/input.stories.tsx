@@ -1,6 +1,5 @@
 import React, {ChangeEvent, useRef, useState} from 'react';
-import {action} from '@storybook/addon-actions';
-import {OnOff} from '../OnOff/OnOff';
+import {OnOff} from '../onOff/OnOff';
 
 export default {
     title: 'input',
@@ -15,8 +14,8 @@ export const UncontrolledInput = () => {
 
 export const TrackValueOfUncontrolledInput = () => {
     const [value, setValue] = useState('')
-    const onChangeClick = (event: ChangeEvent<HTMLInputElement>) => {
-        const actualValue = event.currentTarget.value
+    const onChangeClick = (e: ChangeEvent<HTMLInputElement>) => {
+        const actualValue = e.currentTarget.value
         setValue(actualValue)
     }
 
