@@ -103,7 +103,6 @@ export const KeysTrackerExample = () => {
             console.log(e.key)
             setText(text + e.key)
         }
-
         window.addEventListener('keypress', handler)
 
         return () => {
